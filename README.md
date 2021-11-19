@@ -14,8 +14,8 @@
 ![Tailwind](https://img.shields.io/badge/-Tailwind-%232c3e50?style=for-the-badge&logo=tailwindcss)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-%232c3e50?style=for-the-badge&logo=Bootstrap)
 ![Linux Ubuntu](https://img.shields.io/badge/Ubuntu-%232c3e50?style=for-the-badge&logo=ubuntu)
-![Unity](https://img.shields.io/twitter/url?style=for-the-badge&url=https%3A%2F%2Fimg.shields.io%2Fbadge%2F-PHP-%25232c3e50%3Fstyle%3Dfor-the-badge%26logo%3DUnity)
-![C#](https://img.shields.io/badge/-Bootstrap-%232c3e50?style=for-the-badge&logo=Bootstrap)
+![Unity](https://img.shields.io/badge/Unity-%232c3e50?style=for-the-badge&logo=unity)
+![C#](https://img.shields.io/badge/C%23-%232c3e50?style=for-the-badge&logo=c-sharp)
 
 ## Portfolio
 <!-- [www.arifszn.com](https://www.arifszn.com) -->
