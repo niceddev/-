@@ -1,10 +1,3 @@
-<p align="center">
-  <a href="" alt="link to portfolio" title="portfolio">
-    <img src="images/70O.gif" />
-  </a>
-</p>
-
-<br/>
 
 ## My Skills
 
@@ -23,3 +16,10 @@
 
 ## Portfolio
 <!-- [www.arifszn.com](https://www.arifszn.com) -->
+
+
+<p align="center">
+  <a href="" alt="link to portfolio" title="portfolio">
+    <img src="images/70O.gif" />
+  </a>
+</p>
