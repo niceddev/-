@@ -1,3 +1,4 @@
+<img src="images/6ppi.gif" />
 
 ## My Skills
 
