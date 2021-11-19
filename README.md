@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" alt="link to portfolio" title="portfolio">
-    <img src="https://i.gifer.com/6ppi.gif" width="100%"/>
+    <img src="images/6ppi.gif" width="100%"/>
   </a>
 </p>
 
