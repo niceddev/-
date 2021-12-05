@@ -2,7 +2,7 @@
 
 ## My Skills
 
-![Vue](https://img.shields.io/badge/-Vue-4fc08d?style=flat&logo=Vue.js&logoColor=fff)
+![Vue](https://img.shields.io/badge/-Vue-%232c3e50?style=for-the-badge&logo=Vue.js)
 ![PHP](https://img.shields.io/badge/-PHP-%232c3e50?style=for-the-badge&logo=PHP)
 ![Laravel](https://img.shields.io/badge/-Laravel-%232c3e50?style=for-the-badge&logo=laravel)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%232c3e50?style=for-the-badge&logo=javascript)
