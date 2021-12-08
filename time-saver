@@ -1,4 +1,5 @@
-# https://github.com/barryvdh/laravel-debugbar
+# Laravel DebugBar
+(https://github.com/barryvdh/laravel-debugbar)
 composer require barryvdh/laravel-debugbar --dev
 
 # VueJS
@@ -7,3 +8,7 @@ run php artisan ui vue for just installing Vue.
 run php artisan ui vue --auth for scaffolding out the auth views.
 run npm install && npm run dev
 --- npm update vue-loader
+
+# Laravel-mix
+npm install laravel-mix --save-dev
+
