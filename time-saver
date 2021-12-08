@@ -7,10 +7,10 @@ composer require barryvdh/laravel-debugbar --dev
 composer require beyondcode/laravel-query-detector --dev
 
 # VueJS
-run composer require laravel/ui
-run php artisan ui vue (for just installing Vue.)
-run php artisan ui vue --auth (for scaffolding out the auth views.)
-run npm install && npm run dev
+composer require laravel/ui
+php artisan ui vue (for just installing Vue.)
+php artisan ui vue --auth (for scaffolding out the auth views.)
+npm install && npm run dev
 --- npm update vue-loader
 
 # Laravel-mix
