@@ -16,3 +16,6 @@ npm install && npm run dev
 # Laravel-mix
 npm install laravel-mix --save-dev
 
+# Laravel Migration Actions
+(https://github.com/TheDragonCode/laravel-migration-actions)
+composer require dragon-code/laravel-migration-actions
