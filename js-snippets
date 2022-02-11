@@ -5,20 +5,19 @@ console.clear();
 let durationObj = document.querySelectorAll('#overlays ytd-thumbnail-overlay-time-status-renderer span');
 let totalDurationTimeArr = [];
 let regExp = /\s/gi;
-let minute = '', second = '', hour = '';
-
+let minutes = '', seconds = '', hours = '';
 
 durationObj.forEach(data => {
     let duration = data.innerHTML.replace(regExp, '').split(':');
 
-    if(duration.length == 3){
-        hour = parseInt(duration[0] * 60 * 60);
+    if (duration.length == 3){
+        hour   = parseInt(duration[0] * 60 * 60);
         minute = parseInt(duration[1]) * 60;
         second = parseInt(duration[2]);
         totalDurationTimeArr.push(hour + minute + sec);
-    }else{
+    } else {
         minute = parseInt(duration[0]) * 60;
-        sec = parseInt(duration[1]);
+        sec    = parseInt(duration[1]);
         totalDurationTimeArr.push(minute + sec);
     }
 })
@@ -26,5 +25,8 @@ durationObj.forEach(data => {
 let totalDurationTime = totalDurationTimeArr.reduce((prev, next) => {
     return prev + next;
 })
-console.log('Total duration: ' + totalDurationTime);
+
+let timeSlug = new Date(totalDurationTime * 1000).toISOString().substr(11, 8);
+
+console.log('Total duration: ' + timeSlug);
 console.log('Videos count: ' + durationObj.length);
