@@ -1,0 +1,18 @@
+# get YouTube playlist's total duration time
+
+let durationObj = document.querySelectorAll('#overlays ytd-thumbnail-overlay-time-status-renderer span');
+let totalDurationTime = [];
+let regExp = /\s/gi;
+
+durationObj.forEach(data => {
+    let duration = data.innerHTML.replace(regExp, '').split(':');
+    let minute = parseInt(duration[0]) * 60;
+    let sec = parseInt(duration[1]);
+    
+    totalDurationTime.push(minute + sec);
+})
+
+console.log('Total duration: ' + totalDurationTime.reduce((prev, next) => {
+    return prev + next;
+}))
+
