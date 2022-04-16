@@ -11,11 +11,11 @@
 ![jQuery](https://img.shields.io/badge/-jQuery-%232c3e50?style=for-the-badge&logo=jQuery)
 ![MySQL](https://img.shields.io/badge/-MySQL-%232c3e50?style=for-the-badge&logo=MySQL)
 ![Git](https://img.shields.io/badge/-Git-%232c3e50?style=for-the-badge&logo=git)
-![Docker](https://img.shields.io/badge/-Docker-%232c3e50?style=for-the-badge&logo=docker)
+<!-- ![Docker](https://img.shields.io/badge/-Docker-%232c3e50?style=for-the-badge&logo=docker) -->
 ![CSS](https://img.shields.io/badge/-CSS-%232c3e50?style=for-the-badge&logo=css3)
 ![Tailwind](https://img.shields.io/badge/-Tailwind-%232c3e50?style=for-the-badge&logo=tailwindcss)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-%232c3e50?style=for-the-badge&logo=Bootstrap)
-![Linux Ubuntu](https://img.shields.io/badge/Ubuntu-%232c3e50?style=for-the-badge&logo=ubuntu)
+<!-- ![Linux Ubuntu](https://img.shields.io/badge/Ubuntu-%232c3e50?style=for-the-badge&logo=ubuntu) -->
 ![Unity](https://img.shields.io/badge/Unity-%232c3e50?style=for-the-badge&logo=unity)
 ![C#](https://img.shields.io/badge/C%23-%232c3e50?style=for-the-badge&logo=c-sharp)
 
