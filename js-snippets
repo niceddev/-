@@ -10,7 +10,7 @@ let minutes = '', seconds = '', hours = '';
 durationObj.forEach(data => {
     let duration = data.innerHTML.replace(regExp, '').split(':');
 
-    if (duration.length === 3){
+    if (duration.length == 3){
         hour   = parseInt(duration[0] * 60 * 60);
         minute = parseInt(duration[1]) * 60;
         second = parseInt(duration[2]);
