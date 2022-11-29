@@ -6,8 +6,6 @@
 ![PHP](https://img.shields.io/badge/-PHP-%232c3e50?style=for-the-badge&logo=PHP)
 ![Laravel](https://img.shields.io/badge/-Laravel-%232c3e50?style=for-the-badge&logo=laravel)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%232c3e50?style=for-the-badge&logo=javascript)
-![React.js](https://img.shields.io/badge/-React.js-%232c3e50?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/-Node.js-%232c3e50?style=for-the-badge&logo=node-dot-js)
 ![jQuery](https://img.shields.io/badge/-jQuery-%232c3e50?style=for-the-badge&logo=jQuery)
 ![MySQL](https://img.shields.io/badge/-MySQL-%232c3e50?style=for-the-badge&logo=MySQL)
 ![Git](https://img.shields.io/badge/-Git-%232c3e50?style=for-the-badge&logo=git)
