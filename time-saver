@@ -19,3 +19,6 @@ npm install laravel-mix --save-dev
 # Laravel Migration Actions
 (https://github.com/TheDragonCode/laravel-migration-actions)
 composer require dragon-code/laravel-migration-actions
+
+# Installing docker-compose on Ubuntu 22
+https://linuxhint.com/install-docker-compose-ubuntu-22-04/ 
