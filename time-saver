@@ -6,6 +6,9 @@ composer require barryvdh/laravel-debugbar --dev
 (https://github.com/beyondcode/laravel-query-detector)
 composer require beyondcode/laravel-query-detector --dev
 
+# Nginx configuration generate
+https://www.digitalocean.com/community/tools/nginx
+
 # VueJS
 composer require laravel/ui
 php artisan ui vue (for just installing Vue.)
