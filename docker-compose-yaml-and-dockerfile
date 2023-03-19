@@ -20,6 +20,7 @@ services:
       dockerfile: Dockerfile
       args:
         PROJECT_NAME: ${DOCKER_PROJECT_NAME}
+    user: ${DOCKER_PROJECT_NAME}
     volumes:
       - ./:/var/www/${DOCKER_PROJECT_NAME}
       - ./docker/php/php.ini:/usr/local/etc/php/conf.d/z-php.ini
@@ -77,8 +78,7 @@ WORKDIR /var/www/${PROJECT_NAME}
 RUN useradd -m ${PROJECT_NAME} \
     && usermod -aG root ${PROJECT_NAME} \
     && chown -R ${PROJECT_NAME}:www-data ./ \
-    && find ./ -type f -exec chmod 664 {} \; \
-    && find ./ -type d -exec chmod 775 {} \;
+    && find ./ \( -path ./vendor -o -path ./node_modules \) -exec chmod 775 {} \;
 
 
 
