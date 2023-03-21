@@ -1,3 +1,8 @@
 # usecase: batcat file.txt 
 sudo apt install bat 
 
+# usecase: bpytop. like htop but better
+sudo apt install bpytop
+
+# usecase: exa. like ls but better
+sudo apt install exa
