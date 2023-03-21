@@ -1,2 +1,3 @@
-# sudo apt install bat 
-## usecase: batcat file.txt 
+# usecase: batcat file.txt 
+sudo apt install bat 
+
