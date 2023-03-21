@@ -6,3 +6,6 @@ sudo apt install bpytop
 
 # usecase: exa. like ls but better
 sudo apt install exa
+
+# usecase: <command> | lolcat. makes output text shine like in rainbow colors
+sudo apt install lolcat
