@@ -1,0 +1,5 @@
+docker exec -u 0 -it test_php bash
+sudo chown $(whoami) $(pecl config-get php_dir)
+pecl install swoole
+#add extension=swoole.so into z-php.ini
+#then goto laravel octane documentation
