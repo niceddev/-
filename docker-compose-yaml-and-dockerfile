@@ -1,62 +1,74 @@
 version: '3.8'
 
 services:
-  nginx:
-    image: nginx
-    container_name: ${DOCKER_PROJECT_NAME}_nginx
-    restart: always
-    volumes:
-      - ./:/var/www/${DOCKER_PROJECT_NAME}
-      - ./docker/nginx/:/etc/nginx/conf.d
-      - ./storage/docker/logs/nginx/:/var/log/nginx
-    ports:
-      - ${DOCKER_NGINX_PORT}:80
+    nginx:
+        image: nginx
+        container_name: ${DOCKER_PROJECT_NAME}_nginx
+        restart: always
+        volumes:
+            - ./:/var/www/${DOCKER_PROJECT_NAME}
+            - ./docker/nginx/:/etc/nginx/conf.d
+            - ./storage/docker/logs/nginx/:/var/log/nginx
+        ports:
+            - ${DOCKER_NGINX_PORT}:80
 
-  php:
-    container_name: ${DOCKER_PROJECT_NAME}_php
-    restart: always
-    build:
-      context: docker/php
-      dockerfile: Dockerfile
-      args:
-        PROJECT_NAME: ${DOCKER_PROJECT_NAME}
-    user: ${DOCKER_PROJECT_NAME}
-    volumes:
-      - ./:/var/www/${DOCKER_PROJECT_NAME}
-      - ./docker/php/php.ini:/usr/local/etc/php/conf.d/z-php.ini
-    ports:
-      - ${DOCKER_PHP_PORT}:9000
+    php:
+        container_name: ${DOCKER_PROJECT_NAME}_php
+        restart: always
+        build:
+            context: docker/php
+            dockerfile: Dockerfile
+            args:
+                PROJECT_NAME: ${DOCKER_PROJECT_NAME}
+        user: ${DOCKER_PROJECT_NAME}
+        volumes:
+            - ./:/var/www/${DOCKER_PROJECT_NAME}
+            - ./docker/php/php.ini:/usr/local/etc/php/conf.d/z-php.ini
+        ports:
+            - ${DOCKER_PHP_PORT}:9000
 
-  postgres:
-    image: postgres:14
-    container_name: ${DOCKER_PROJECT_NAME}_postgres
-    restart: always
-    environment:
-      POSTGRES_DB: ${DOCKER_PROJECT_NAME}
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    volumes:
-      - postgres:/var/lib/${DOCKER_PROJECT_NAME}_postgres
-    ports:
-      - ${DOCKER_POSTGRES_PORT}:5432
+    postgres:
+        image: postgres:14
+        container_name: ${DOCKER_PROJECT_NAME}_postgres
+        restart: always
+        environment:
+            POSTGRES_DB: ${DOCKER_PROJECT_NAME}
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+        volumes:
+            - postgres:/var/lib/${DOCKER_PROJECT_NAME}_postgres
+        ports:
+            - ${DOCKER_POSTGRES_PORT}:5432
 
-  redis:
-    image: redis:alpine
-    container_name: ${DOCKER_PROJECT_NAME}_redis
-    restart: always
-    command: redis-server
-    volumes:
-      - redis:/var/lib/${DOCKER_PROJECT_NAME}_redis
-    ports:
-      - ${DOCKER_REDIS_PORT}:6379
+    redis:
+        image: redis:alpine
+        container_name: ${DOCKER_PROJECT_NAME}_redis
+        restart: always
+        command: redis-server --port ${DOCKER_REDIS_PORT}
+        volumes:
+            - redis:/var/lib/${DOCKER_PROJECT_NAME}_redis
+        ports:
+            - ${DOCKER_REDIS_PORT}:6379
+
+    redisinsight:
+        image: redislabs/redisinsight
+        container_name: ${DOCKER_PROJECT_NAME}_redisinsight
+        restart: always
+        volumes:
+            - redisinsight:/var/lib/${DOCKER_PROJECT_NAME}_redisinsight
+        ports:
+            - ${DOCKER_REDISINSIGHT_PORT}:8001
 
 volumes:
-  postgres:
-    external:
-      name: ${DOCKER_PROJECT_NAME}_postgres
-  redis:
-    external:
-      name: ${DOCKER_PROJECT_NAME}_redis
+    redis:
+        external:
+            name: ${DOCKER_PROJECT_NAME}_redis
+    redisinsight:
+        external:
+            name: ${DOCKER_PROJECT_NAME}_redisinsight
+    postgres:
+        external:
+            name: ${DOCKER_PROJECT_NAME}_postgres
 
 
 
